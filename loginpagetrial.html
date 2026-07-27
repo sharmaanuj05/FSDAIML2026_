@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+
+    <div style="background-color: black; padding: 20px;">
+        <h3 style="color: white;">Username</h3>
+        <input type="text" id="username" placeholder="Enter Username">
+
+        <h3 style="color: white;">Password</h3>
+        <input type="password" id="password" placeholder="Enter Password">
+    </div>
+
+    <div style="background-color: pink; padding: 20px;">
+        <button id="loginBtn"
+                onclick="login()"
+                style="background-color: blue;
+                       color: white;
+                       padding: 10px 20px;
+                       border: none;
+                       cursor: pointer;">
+            Login
+        </button>
+    </div>
+
+    <script>
+        function login() {
+
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let button = document.getElementById("loginBtn");
+
+            if (username === "sharma_anuj05" && password === "password123") {
+                button.style.backgroundColor = "green";
+            } else {
+                button.style.backgroundColor = "red";
+            }
+
+        }
+    </script>
+
+</body>
+</html>
