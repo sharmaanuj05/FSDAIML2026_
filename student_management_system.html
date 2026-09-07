@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+</head>
+<body style="font-family:Arial;background:#f5f5f5;">
+
+<h1 align="center">Student Management System</h1>
+
+<div style="width:500px;margin:auto;background:white;border:1px solid #ddd;padding:20px;">
+
+    <h3>Add Student</h3>
+
+    <div>
+        <input type="text" placeholder="Student Name"
+        style="width:45%;padding:10px;">
+
+        <input type="text" placeholder="Roll Number"
+        style="width:45%;padding:10px;">
+    </div>
+
+    <br>
+
+    <div>
+        <select style="width:45%;padding:10px;">
+            <option>Select Course</option>
+            <option>CSE</option>
+            <option>AIML</option>
+            <option>ECE</option>
+            <option>IT</option>
+        </select>
+
+        <input type="number" placeholder="Marks"
+        style="width:45%;padding:10px;">
+    </div>
+
+    <br>
+
+    <button style="width:100%;padding:10px;background:#28a745;color:white;border:0;">
+        Add Student
+    </button>
+
+</div>
+
+<br>
+
+<div style="width:500px;margin:auto;background:white;border:1px solid #ddd;padding:20px;">
+
+    <h3>Student Records</h3>
+
+    <input type="text" placeholder="Search by Name or Roll Number"
+    style="width:100%;padding:10px;box-sizing:border-box;">
+
+    <br><br>
+
+    <div style="display:flex;gap:15px;">
+
+        <div style="width:50%;background:#f1f8f4;border:1px solid #ddd;padding:10px;">
+            <b>Total Students</b>
+            <h2>0</h2>
+        </div>
+
+        <div style="width:50%;background:#f1f5f8;border:1px solid #ddd;padding:10px;">
+            <b>Average Marks</b>
+            <h2>0</h2>
+        </div>
+
+    </div>
+
+    <br>
+
+    <table border="1" width="100%" cellpadding="8"
+    style="border-collapse:collapse;text-align:center;">
+
+        <tr style="background:#eee;">
+            <th>Roll Number</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Marks</th>
+            <th>Grade</th>
+            <th>Action</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Rahul</td>
+            <td>CSE</td>
+            <td>85</td>
+            <td>A</td>
+            <td>
+                <button style="background:#ffc107;border:0;padding:5px 8px;">
+                    Edit
+                </button>
+
+                <button style="background:#dc3545;color:white;border:0;padding:5px 8px;">
+                    Delete
+                </button>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+</html>
