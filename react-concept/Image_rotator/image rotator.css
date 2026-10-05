@@ -1,0 +1,46 @@
+/* Center everything on the page */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Arrange image and button vertically in the center */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Style the image with smooth rotation animation */
+#image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  /* Smooth transition for rotation */
+  transition: transform 0.5s ease;
+}
+
+/* Style the Rotate button */
+#rotateBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect for the button */
+#rotateBtn:hover {
+  background-color: #0056b3;
+}
